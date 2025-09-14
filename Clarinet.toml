@@ -1,0 +1,24 @@
+[project]
+name = 'decentralized-supply-chain-tracker'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.product-provenance-tracker]
+path = 'contracts/product-provenance-tracker.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.quality-assurance-automation]
+path = 'contracts/quality-assurance-automation.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
